@@ -1,0 +1,9 @@
+{
+  "name": "phaser.fun",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "phaser": "*"
+  }
+}
