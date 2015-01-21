@@ -13,7 +13,8 @@ module.exports = function (grunt) {
     grunt.initConfig(configs);
 
     grunt.registerTask('default', ['build']);
+    grunt.registerTask('serve', ['http-server:dev']);
 
-    grunt.registerTask('build', ['clean', 'copy', '6to5']);
+    grunt.registerTask('build', ['clean', 'copy', '6to5', 'watch']);
 
 };

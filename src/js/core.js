@@ -1,6 +1,6 @@
 
 class Core {
-  constructor() {
+  constructor() {    
     this.game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: this.preload, create: this.create, update: this.update, render: this.render });		
   }
   preload() {}
@@ -8,9 +8,6 @@ class Core {
   update() {}
   render() {
     this.game.debug.inputInfo(32, 32);
-  }
-  get Game() {
-    return this.game;
   }
 }
 
