@@ -9,10 +9,12 @@ module.exports = {
 
   es6: {
     files: '<%= src_dir %>/**',
-    tasks: ['clean:es6', '6to5'],
-    options: {
-      reload: true
-    }
+    tasks: ['clean:es6', '6to5']
+  },
+
+  index: {
+    files: '<%= src_dir %>/index.html',
+    tasks: ['clean:index', 'index']
   }
 
 
